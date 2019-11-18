@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b25399c.chunk.css",
-    "main.js": "/static/js/main.e64b8702.chunk.js",
-    "main.js.map": "/static/js/main.e64b8702.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e3c9546a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e3c9546a.js.map",
-    "static/css/2.6d7d54d2.chunk.css": "/static/css/2.6d7d54d2.chunk.css",
-    "static/js/2.228a6599.chunk.js": "/static/js/2.228a6599.chunk.js",
-    "static/js/2.228a6599.chunk.js.map": "/static/js/2.228a6599.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8ada7593c8c29cf7b1f2bf9bfc7b44e5.js": "/precache-manifest.8ada7593c8c29cf7b1f2bf9bfc7b44e5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.6d7d54d2.chunk.css.map": "/static/css/2.6d7d54d2.chunk.css.map",
-    "static/css/main.3b25399c.chunk.css.map": "/static/css/main.3b25399c.chunk.css.map"
+    "main.css": "/payment-method-updated-version/static/css/main.3b25399c.chunk.css",
+    "main.js": "/payment-method-updated-version/static/js/main.6e1eddf6.chunk.js",
+    "main.js.map": "/payment-method-updated-version/static/js/main.6e1eddf6.chunk.js.map",
+    "runtime-main.js": "/payment-method-updated-version/static/js/runtime-main.8fe19748.js",
+    "runtime-main.js.map": "/payment-method-updated-version/static/js/runtime-main.8fe19748.js.map",
+    "static/css/2.6d7d54d2.chunk.css": "/payment-method-updated-version/static/css/2.6d7d54d2.chunk.css",
+    "static/js/2.228a6599.chunk.js": "/payment-method-updated-version/static/js/2.228a6599.chunk.js",
+    "static/js/2.228a6599.chunk.js.map": "/payment-method-updated-version/static/js/2.228a6599.chunk.js.map",
+    "index.html": "/payment-method-updated-version/index.html",
+    "precache-manifest.1bf27b49f888b47fdcb14a2f1066bfd9.js": "/payment-method-updated-version/precache-manifest.1bf27b49f888b47fdcb14a2f1066bfd9.js",
+    "service-worker.js": "/payment-method-updated-version/service-worker.js",
+    "static/css/2.6d7d54d2.chunk.css.map": "/payment-method-updated-version/static/css/2.6d7d54d2.chunk.css.map",
+    "static/css/main.3b25399c.chunk.css.map": "/payment-method-updated-version/static/css/main.3b25399c.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3c9546a.js",
+    "static/js/runtime-main.8fe19748.js",
     "static/css/2.6d7d54d2.chunk.css",
     "static/js/2.228a6599.chunk.js",
     "static/css/main.3b25399c.chunk.css",
-    "static/js/main.e64b8702.chunk.js"
+    "static/js/main.6e1eddf6.chunk.js"
   ]
 }
