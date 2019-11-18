@@ -1,0 +1,43 @@
+.cardDesign{
+    position: relative;
+    top: 147px;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    box-shadow: 0 0 4px 4px rgba(139, 159, 163, 0.25);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContent{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.formInput{
+    -webkit-appearance: none;
+    outline: none;
+    background: #c4d7ec;
+    height: 6px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.formInput:focus{
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.sliderText{
+    color: #f1f1f1;
+    font-size: 13px;
+    margin: 15px 0 0;
+}
+
+.inputContent{
+    margin-bottom: 1rem;
+    color:#f1f1f1
+}
