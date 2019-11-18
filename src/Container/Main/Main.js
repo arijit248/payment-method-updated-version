@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Container, Row, Col, Card, Form } from 'react-bootstrap';
-import mainStyle from '../Main/main.module.css';
+import InputRange from 'react-input-range';
+import 'react-input-range/lib/css/index.css';
+import '../Main/temp.css';
+
 
 class Main extends Component {
     state = {
@@ -47,13 +50,6 @@ class Main extends Component {
 
     //onload data will load
     componentDidMount() {
-        // console.log(cache)
-        this.callApi()
-
-    }
-
-    //updated data will show
-    componentDidUpdate() {
         this.callApi()
     }
 
@@ -63,35 +59,54 @@ class Main extends Component {
         localStorage.setItem('numMonths', JSON.stringify(nextState.numMonths));
     }
 
+    // //updated data will show
+    // componentDidUpdate() {
+    //     this.callApi()
+    // }
+
     //Loan Amount Event
-    handleAmountChange(evt) {
-        this.setState({ Amount: evt.target.value, });
-    }
+    // handleAmountChange(evt) {
+    //     this.setState({ Amount: evt.target.value, });
+    // }
 
     //Loan Duration Event
-    handleDurationChange(evt) {
-        this.setState({ numMonths: evt.target.value, });
-    }
+    // handleDurationChange(evt) {
+    //     this.setState({ numMonths: evt.target.value, });
+    // }
 
     render() {
         return (
             <div>
                 {/* Card section */}
-                <Card bg="dark" className={mainStyle.cardDesign}>
+                <Card bg="dark" className='cardDesign'>
                     <Card.Body style={{ width: '100%' }}>
                         <Card.Title style={{ fontSize: '23px', color: '#b3b8bb' }}>Payment Calculator</Card.Title>
-                        <Form className={mainStyle.formContent} >
+                        <Form className='formContent' >
 
                             {/* Amount Part */}
-                            <div className={mainStyle.inputContent}>
-                                <label>Loan Amount</label>
-                                <input type="range" name="amount" className={mainStyle.formInput} value={this.state.Amount} min="500" max="5000" onChange={(evt) => this.handleAmountChange(evt)} />
+                            <div className='inputContent'>
+                                <Form.Label style={{ marginBottom: '1.5rem' }}>Loan Amount</Form.Label>
+                                {/* <input type="range" name="amount" className='formInput' value={this.state.Amount} min="500" max="5000" onChange={(evt) => this.handleAmountChange(evt)} /> */}
+                                <InputRange
+                                    maxValue={5000}
+                                    minValue={500}
+                                    value={this.state.Amount}
+                                    // onChange={(evt) => this.handleAmountChange(evt)}
+                                    onChange={Amount => this.setState({ Amount })}
+                                    onChangeComplete={this.callApi} />
                             </div>
 
                             {/* Duration Part */}
-                            <div className={mainStyle.inputContent}>
-                                <label>Loan Duration</label>
-                                <input type="range" name="duration" className={mainStyle.formInput} value={this.state.numMonths} min="6" max="24" onChange={(evt) => this.handleDurationChange(evt)} />
+                            <div className='inputContent'>
+                                <Form.Label style={{ marginBottom: '1.5rem' }}>Loan Duration</Form.Label>
+                                {/* <input type="range" name="duration" className='formInput' value={this.state.numMonths} min="6" max="24" onChange={(evt) => this.handleDurationChange(evt)} /> */}
+                                <InputRange
+                                    maxValue={24}
+                                    minValue={6}
+                                    value={this.state.numMonths}
+                                    // onChange={(evt) => this.handleDurationChange(evt)}
+                                    onChange={numMonths => this.setState({ numMonths })}
+                                    onChangeComplete={this.callApi} />
                             </div>
 
                             {/* Rsult Part */}
@@ -99,26 +114,26 @@ class Main extends Component {
                                 <Row>
                                     {/* amount value and monthes value */}
                                     <Col lg={7} md={7} sm={12}>
-                                        <div className={mainStyle.sliderText}>Amount Value: <b>{this.state.priAmount.amount} {this.state.priAmount.currency} </b></div>
+                                        <div className='sliderText'>Amount Value: <b>{this.state.priAmount.amount} {this.state.priAmount.currency} </b></div>
                                     </Col>
                                     <Col lg={5} md={5} sm={12}>
-                                        <div className={mainStyle.sliderText}>Months: <b>{this.state.Interest.numPayments}</b></div>
+                                        <div className='sliderText'>Months: <b>{this.state.Interest.numPayments}</b></div>
                                     </Col>
                                 </Row>
                                 <Row>
                                     {/* interest value and payment amount */}
                                     <Col lg={7} md={7} sm={12}>
-                                        <div className={mainStyle.sliderText}>Payment Amount: <b>{this.state.monAmount.amount} {this.state.monAmount.currency} </b></div>
+                                        <div className='sliderText'>Payment Amount: <b>{this.state.monAmount.amount} {this.state.monAmount.currency} </b></div>
                                     </Col>
                                     <Col lg={5} md={5} sm={12}>
-                                        <div className={mainStyle.sliderText}>Interest Value: <b>{this.state.Interest.interestRate}</b></div>
+                                        <div className='sliderText'>Interest Value: <b>{this.state.Interest.interestRate}</b></div>
                                     </Col>
                                 </Row>
                             </Container>
                         </Form>
                     </Card.Body>
                 </Card>
-            </div>
+            </div >
         );
     }
 }

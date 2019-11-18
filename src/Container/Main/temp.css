@@ -3,7 +3,6 @@
     top: 147px;
     width: 100%;
     max-width: 500px;
-    padding: 25px;
     box-shadow: 0 0 4px 4px rgba(139, 159, 163, 0.25);
     display: inline-flex;
     justify-content: center;
@@ -31,13 +30,13 @@
     box-shadow: none;
 }
 
+.inputContent{
+    margin-bottom: 1rem;
+    color:#f1f1f1
+}
+
 .sliderText{
     color: #f1f1f1;
     font-size: 13px;
     margin: 15px 0 0;
-}
-
-.inputContent{
-    margin-bottom: 1rem;
-    color:#f1f1f1
 }
