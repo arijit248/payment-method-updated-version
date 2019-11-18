@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/payment-method/static/css/main.93d57a44.chunk.css",
+    "main.js": "/payment-method/static/js/main.e959c2c5.chunk.js",
+    "main.js.map": "/payment-method/static/js/main.e959c2c5.chunk.js.map",
+    "runtime-main.js": "/payment-method/static/js/runtime-main.c7ddc143.js",
+    "runtime-main.js.map": "/payment-method/static/js/runtime-main.c7ddc143.js.map",
+    "static/js/2.61cbfc03.chunk.js": "/payment-method/static/js/2.61cbfc03.chunk.js",
+    "static/js/2.61cbfc03.chunk.js.map": "/payment-method/static/js/2.61cbfc03.chunk.js.map",
+    "index.html": "/payment-method/index.html",
+    "precache-manifest.2dc79b27d0f814ff9602ba366116847d.js": "/payment-method/precache-manifest.2dc79b27d0f814ff9602ba366116847d.js",
+    "service-worker.js": "/payment-method/service-worker.js",
+    "static/css/main.93d57a44.chunk.css.map": "/payment-method/static/css/main.93d57a44.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7ddc143.js",
+    "static/js/2.61cbfc03.chunk.js",
+    "static/css/main.93d57a44.chunk.css",
+    "static/js/main.e959c2c5.chunk.js"
+  ]
+}
