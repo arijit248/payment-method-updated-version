@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://arijit248.github.io/payment-method-updated-version",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.1.1",
     "lru-cache": "^5.1.1",
     "react": "^16.11.0",
